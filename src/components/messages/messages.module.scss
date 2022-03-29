@@ -1,0 +1,58 @@
+.messages {
+    list-style: none;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    li {
+        outline: 1px solid rgba(0, 0, 0, 0.02);
+        position: relative;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 0 15px;
+
+        i {
+            font-style: normal;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.2;
+        }
+
+        &.reaction {
+            font-weight: bold;
+        }
+
+        &.laugh {
+            background-color: yellow;
+        }
+        &.gasp {
+            background-color: aqua;
+        }
+        &.cheer {
+            background-color: orange;
+        }
+        &.applause {
+            background-color: greenyellow;
+        }
+        &.boo {
+            background-color: plum;
+        }
+    }
+}
+
+.expectedLength {
+    position: absolute;
+    top: 0;
+    height: calc(15px * var(--len));
+    border-bottom: 1px dashed red;
+    opacity: 0.2;
+    width: 100%;
+    left: auto;
+    right: auto;
+    margin: auto;
+    transition: height 300ms;
+}

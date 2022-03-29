@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "prettier.configPath": "./.prettierrc.js",
+    "eslint.packageManager": "yarn",
+    "eslint.lintTask.enable": true,
+    "eslint.lintTask.options": "src/**/*.tsx src/**/*.ts",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

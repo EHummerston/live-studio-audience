@@ -1,0 +1,25 @@
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+    .label {
+        display: block;
+        width: fit-content;
+    }
+
+    .input {
+        //
+    }
+
+    .numbers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sliderValue {
+        // position: absolute;
+    }
+}
